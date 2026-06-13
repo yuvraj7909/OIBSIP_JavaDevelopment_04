@@ -36,7 +36,7 @@ public class LoginPanel extends JPanel {
         card.setBorder(new EmptyBorder(40, 40, 40, 40));
         card.setPreferredSize(new Dimension(420, 480));
 
-        // Brand
+    
         JPanel brand = new JPanel();
         brand.setOpaque(false);
         brand.setLayout(new BoxLayout(brand, BoxLayout.Y_AXIS));
@@ -64,7 +64,7 @@ public class LoginPanel extends JPanel {
         card.add(brand);
         card.add(Box.createVerticalStrut(30));
 
-        // Error label
+        
         errorLabel = new JLabel(" ", SwingConstants.CENTER);
         errorLabel.setFont(Theme.SMALL_FONT);
         errorLabel.setForeground(Theme.DANGER);

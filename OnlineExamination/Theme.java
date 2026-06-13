@@ -30,7 +30,7 @@ public class Theme {
     public static final int WINDOW_W = 900;
     public static final int WINDOW_H = 650;
 
-    // Helper: Rounded Rectangle Button
+    
     public static javax.swing.JButton createButton(String text, Color bg, Color fg) {
         javax.swing.JButton btn = new javax.swing.JButton(text) {
             @Override protected void paintComponent(Graphics g) {

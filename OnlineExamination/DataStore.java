@@ -11,7 +11,7 @@ public class DataStore {
     private static List<Exam> exams        = new ArrayList<>();
 
     static {
-        // Default users
+        
         users.put("admin",   new User("admin",   "admin123", "Admin",   "User",   "admin@examportal.com",  "9876543210"));
         users.put("student", new User("student", "student1", "Ravi",    "Sharma", "ravi@example.com",      "9123456789"));
         users.put("rahul",   new User("rahul",   "rahul123", "Rahul",   "Verma",  "rahul@example.com",     ""));

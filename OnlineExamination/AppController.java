@@ -11,7 +11,7 @@ public class AppController {
 
     private User currentUser;
 
-    // Panels
+
     private LoginPanel      loginPanel;
     private DashboardPanel  dashboardPanel;
     private ProfilePanel    profilePanel;
@@ -53,7 +53,7 @@ public class AppController {
         showLogin();
     }
 
-    // ---- Navigation ----
+    
     public void showLogin() {
         cardLayout.show(mainPanel, PAGE_LOGIN);
     }
@@ -83,7 +83,7 @@ public class AppController {
         cardLayout.show(mainPanel, PAGE_RESULT);
     }
 
-    // ---- Auth ----
+
     public void onLoginSuccess(User user) {
         this.currentUser = user;
         dashboardPanel.refreshUser(user);
@@ -103,7 +103,7 @@ public class AppController {
         }
     }
 
-    // ---- Profile update callback ----
+    
     public void onUserUpdated() {
         if (currentUser != null) dashboardPanel.refreshUser(currentUser);
     }
